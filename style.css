@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+.logo{
+    padding: 10px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.links-container{
+    width: 10%;
+    padding: 20px;
+    margin-right: 10%;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    margin-top: 10%;
+    
+}
+.profile-image{
+    width: 30%;
+    padding-left: 10%;
+}
+.profile-description{
+    width: 60%;
+}
+.profile-description h3{
+    font-size: 2.2em;
+}
+.profile-content{
+    width: 80%; 
+    padding-top: 2%;  
+    font-size: 1.2em;
+}
+.about{
+    margin-top: 12%;
+    margin-bottom: 5%;
+}
+.about-content{
+    padding-left: 5%;
+
+}
+.about-content h3{
+    font-size: 2.2em;
+}
+.about-description{
+    width: 90%;
+}
+.about-description p{
+    font-size: 1.2em;
+    margin-top: 2%;
+}
+.skill-bubbles{
+    margin-top: 1%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+.skill-bubble{
+    width: 75px;
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10%;
+    
+}
+
+.footer{
+    height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    color: azure;
+    
+}
+.icons{
+    transition: transform .2s;
+
+}
+.icons:hover{
+
+    -ms-transform: scale(.5); 
+  -webkit-transform: scale(.5); 
+  transform: scale(1.2)
+}
+
+a{
+    font-size: 2.5em;
+    padding-left: 30px;
+}
+.projects{
+    
+    padding-bottom: 5%;
+
+}
+.project-container h3{
+    font-size: 2.2em;
+    text-align: center;
+
+}
+.project-contents{
+    width: 60%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5%;
+}
+.project-content{
+    height: 40vh;
+    width: 95%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.project-description{
+    text-align: left;
+    width: 100%;
+    margin-top: 3%;
+    padding-bottom: 20%;
+    padding-left: 20%;
+}
+#project-header{
+    font-size: 1.3em;
+}
+#project-desc{
+    width: 80%;
+    margin-top: 5%;
+    color: grey;
+}
+.project-image{
+    padding-top: 5%;
+}
+#calculator-img{
+    width: 90%;
+}
+
+@media screen and (max-width: 600px){
+    .banner{
+        flex-direction: column;
+    }
+    .profile-description{
+        width: 90%;
+    }
+}
