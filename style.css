@@ -15,35 +15,50 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
+    width: 100%;
+    height: 8vh;
+    
     
 }
 .logo{
-    padding: 10px;
+    padding-top: 0.5%;
     font-weight: 500;
     margin-left: 20px;
+    margin-top: 2px;
 }
 .links-container{
-    width: 10%;
-    padding: 20px;
+    width: 20%;
     margin-right: 10%;
+    padding-top: 1%;
+
 }
 .links{
     display: flex;
     justify-content: space-between;
     list-style: none;
+    
+}
+#link{
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    
 }
 .banner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
     margin-top: 10%;
+    padding-bottom: 8%;
     
 }
 .profile-image{
     width: 30%;
     padding-left: 10%;
     
+}
+#project-link{
+    text-decoration: none;
 }
 #my-image{
     width: 60%;
@@ -64,8 +79,9 @@
     
 }
 .about{
-    margin-top: 12%;
-    margin-bottom: 5%;
+    padding-top: 10%;
+    
+    height: 90vh;
 }
 .about-content{
     padding-left: 5%;
@@ -106,6 +122,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 i{
     color: azure;
@@ -122,13 +139,13 @@ i{
   transform: scale(1.2)
 }
 
-a{
+#icon-link{
     font-size: 2em;
     padding-left: 30px;
 }
 .projects{
-    
-    padding-bottom: 5%;
+    padding-top: 5%;
+    height: 90vh;
 
 }
 .project-container h3{
@@ -137,7 +154,7 @@ a{
 
 }
 .project-contents{
-    width: 60%;
+    width: 65%;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -145,7 +162,7 @@ a{
 
 }
 .project-content{
-    height: 55vh;
+    height: 60vh;
     width: 95%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 10px;
@@ -155,6 +172,7 @@ a{
     align-items: center;
     cursor: pointer;
     transition: transform .2s;
+    
 
 }
 .project-content:hover{
@@ -165,12 +183,13 @@ a{
 .project-description{
     text-align: left;
     width: 100%;
-    margin-top: 3%;
-    padding-bottom: 20%;
-    padding-left: 20%;
+    margin-top: 15%;
+    
+    padding-left: 10%;
 }
 #project-header{
     font-size: 1.3em;
+    color: black;
 }
 #project-desc{
     width: 80%;
@@ -185,11 +204,136 @@ a{
     width: 90%;
 }
 
+
 @media screen and (max-width: 600px){
+    .container{
+        overflow: hidden;
+    }
     .banner{
         flex-direction: column;
+        margin-top: 10%;
+        padding-bottom: 8%;
+        overflow: hidden;
+        
+    }
+    .profile-image{
+        width: 100%;
+        
+        
+    }
+    #project-link{
+        text-decoration: none;
+    }
+    #my-image{
+        width: 70%;
+        
+    
     }
     .profile-description{
+        width: 100%;
+    }
+    .profile-description h3{
+        font-size: 2.2em;
+        width: 100%
+    }
+    .profile-content{
+        padding-top: 2%;  
+        font-size: 1.2em;
+        width: 100;
+        
+        
+    }
+    
+    .navbar-container{
+        margin-top: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .profile-image{
+        width: 100%;
+    }
+    
+    .profile-description{
         width: 90%;
+        margin-left: 2%;
+    }
+    .profile-description h3{
+        font-size: 1.5em;
+    }
+    .profile-content{
+        width: 80%; 
+        padding-top: 2%;  
+        font-size: 1em;
+        
+        
+    }
+    .links-container{
+        width: 50%;
+        padding-top: 2%;
+    }
+
+
+    
+    .about-content{
+        padding-left: 5%;
+    
+    }
+    .about-content h3{
+        font-size: 1.5em;
+    }
+    .about-description{
+        width: 75%;
+    }
+    .about-description p{
+        font-size: 1em;
+        margin-top: 2%;
+        
+    }
+    .skill-bubbles{
+        margin-top: 5%;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skill-bubble{
+        
+        border: 1px solid grey;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-left: 5px;
+        font-size: 0.8em;
+        
+    }
+
+    .projects{
+        padding-top: 5%;
+        margin-left: -10%;
+        height: 180vh;
+    
+    }
+    .project-container h3{
+        font-size: 1.5em;
+        text-align: center;
+    
+    }
+    .project-contents{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    
+    }
+    .project-content{
+        height: 50vh;
+        width: 100%;
+        margin-top: 5%;
+        
+    
+    }
+    .footer{
+        width: 100vw;
+        
     }
 }
